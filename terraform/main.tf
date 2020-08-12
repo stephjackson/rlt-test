@@ -26,6 +26,7 @@ module "kubernetes-engine" {
   name                       = var.cluster_name
   region                     = var.region
   network                    = var.network
+  // This forces a recreate - why?
   subnetwork                 = var.subnetwork
   ip_range_pods              = var.ip_range_pods
   ip_range_services          = var.ip_range_services
