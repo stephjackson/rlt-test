@@ -1,12 +1,12 @@
 replicaCount: 1
 
 image:
-  repository:
-  tag:
+  repository: gcr.io/focused-brace-286114/rlt-test
+  tag: v1
   pullPolicy: Always
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
   port: 80
 
 ingress:
