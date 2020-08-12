@@ -20,7 +20,7 @@ variable "network" {
 
 variable "subnetwork" {
   description = "ID of GCP VPC subnet"
-  default     = ""
+  default     = "default"
 }
 
 variable "ip_range_pods" {
